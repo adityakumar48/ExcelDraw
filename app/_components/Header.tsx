@@ -1,3 +1,5 @@
+"use client";
+import { LoginLink, RegisterLink } from "@kinde-oss/kinde-auth-nextjs";
 import { PencilRuler } from "lucide-react";
 
 const Header = () => {
@@ -74,20 +76,14 @@ const Header = () => {
 
           <div className="flex items-center gap-4">
             <div className="sm:flex sm:gap-4">
-              <a
-                className="rounded-md bg-purple-600 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-purple-500"
-                href="#"
-              >
+              <LoginLink className="rounded-md bg-purple-600 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-purple-500">
                 Login
-              </a>
+              </LoginLink>
 
               <div className="hidden sm:flex">
-                <a
-                  className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-purple-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
-                  href="#"
-                >
+                <RegisterLink className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-purple-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75">
                   Register
-                </a>
+                </RegisterLink>
               </div>
             </div>
 

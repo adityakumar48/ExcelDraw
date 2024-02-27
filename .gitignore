@@ -34,3 +34,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# Ignore Next.js cache
+.next/cache
+.next/bundle-stats.json
+.next/stats.json
+
+# Ignore Next.js build output
+.next/static
+.next/server
+.next/serverless
+```
+# Ignore the Convex Folder
+convex
