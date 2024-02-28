@@ -1,6 +1,7 @@
 import React from "react";
 import { MoveRight } from "lucide-react";
 import Link from "next/link";
+import { RegisterLink } from "@kinde-oss/kinde-auth-nextjs";
 const Hero = () => {
   return (
     <section className="bg-gray-50">
@@ -20,12 +21,9 @@ const Hero = () => {
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <a
-              className=" w-full rounded bg-purple-600 px-8 py-3 text-sm font-medium text-white shadow hover:bg-purple-700  inline-flex gap-3 tracking-wide h-full items-center  sm:w-auto"
-              href="#"
-            >
+            <RegisterLink className=" w-full rounded bg-purple-600 px-8 py-3 text-sm font-medium text-white shadow hover:bg-purple-700  inline-flex gap-3 tracking-wide h-full items-center  sm:w-auto">
               Try for free <MoveRight />
-            </a>
+            </RegisterLink>
 
             <Link
               href="/about"
